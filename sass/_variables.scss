@@ -1,5 +1,5 @@
 $primary: (
-    primary: #eb2f64,
+    base: #eb2f64,
     light: #FF3366,
     dark: #BA265D
 );
@@ -19,11 +19,15 @@ $grey: (
     darkest: #333,
     darker: #999,
     dark: #777,
-    light: #ccc
+    light: #ccc,
     lighter: #f7f7f7,
     lightest: #EEE,
     white: #FFF
 );
+
+@function color($mapname, $color) {
+    @return map-get($mapname, $color); 
+}
 
 // font-sizes
 $default-font-size: 1.6rem;

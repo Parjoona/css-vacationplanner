@@ -1,0 +1,3 @@
+@mixin boxshadow {
+    box-shadow: 0 2rem 4rem rgba(color($grey, black), .3);
+}
