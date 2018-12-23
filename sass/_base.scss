@@ -20,9 +20,10 @@ body {
     line-height: 1.6;
     background-image: linear-gradient(
         to right bottom,
-        color(light, primary),
-        color(dark, primary));
+        color(primary, light),
+        color(primary, dark)
+        );
     background-size: cover;
     min-height: 100vh;
-    color: color(darkest, grey);
+    color: color(grey, darkest);
 }
