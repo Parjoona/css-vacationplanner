@@ -1,7 +1,7 @@
 .container {
     max-width: 120rem;
     margin: 8rem auto;
-    background: color($grey, lighter);
+    background: color(lighter, grey);
     @include boxshadow;
 
     min-height: 20rem;
@@ -9,8 +9,8 @@
 
 .header {
     height: 7rem;
-    background-color: color($grey, white);
-    border-bottom: color($grey, lighter);
+    background-color: color(white, grey);
+    border-bottom: color(lighter, grey);
 }
 
 .content {
@@ -18,11 +18,11 @@
 }
 
 .sidebar {
-    background-color: color($grey, dark);
+    background-color: color(dark, grey);
     flex: 0 0 18%;
 }
 
 .hotel-view {
-    background-color: color($grey, white);
+    background-color: color(white, grey);
     flex: 1;
 }

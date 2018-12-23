@@ -1,32 +1,42 @@
-$primary: (
-    base: #eb2f64,
-    light: #FF3366,
-    dark: #BA265D
+$colors: (
+    text: #000,
+    background: #333,
+
+    primary: (
+        base: #eb2f64,
+        light: #FF3366,
+        dark: #BA265D
+    )
+
+    secondary: (
+        light: #ffb900,
+        dark: #ff7730
+    )
+
+    teritairy: (
+        light: #2998ff,
+        dark: #5643fa,
+    )
+
+    grey: (
+        black: #000,
+        darkest: #333,
+        darker: #999,
+        dark: #777,
+        light: #ccc,
+        lighter: #f7f7f7,
+        lightest: #EEE,
+        white: #FFF
+    )
 );
 
-$secondary: (
-    light: #ffb900,
-    dark: #ff7730
-);
+@function color($name, $group:null) {
 
-$teritairy: (
-    light: #2998ff,
-    dark: #5643fa,
-);
-
-$grey: (
-    black: #000,
-    darkest: #333,
-    darker: #999,
-    dark: #777,
-    light: #ccc,
-    lighter: #f7f7f7,
-    lightest: #EEE,
-    white: #FFF
-);
-
-@function color($mapname, $color) {
-    @return map-get($mapname, $color); 
+    @if ($group != null) {
+        @return map-get(map-get($colors, $name), $group);
+    } @else {
+        @return map-get($colors, $name);
+    }
 }
 
 // font-sizes
