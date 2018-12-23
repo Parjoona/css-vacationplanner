@@ -173,3 +173,18 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: #f7f7f7; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: #eb2f64; }
