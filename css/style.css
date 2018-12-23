@@ -64,7 +64,7 @@ body {
     border: none;
     padding: .7rem 2rem;
     border-radius: 100px;
-    width: 90%;
+    width: 95%;
     margin-right: -3.25rem;
     transition: all 250ms; }
     .search__input:focus {
@@ -73,7 +73,7 @@ body {
       background: #ccc; }
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
-      color: #EEE; }
+      color: #777; }
   .search__input:focus + .search__button {
     background: #ccc; }
   .search__button {
@@ -87,7 +87,7 @@ body {
   .search__icon {
     height: 2rem;
     width: 2rem;
-    fill: #ccc; }
+    fill: #000; }
 
 .user-nav {
   display: flex;

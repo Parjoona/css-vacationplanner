@@ -17,7 +17,7 @@
         border: none;
         padding: .7rem 2rem;
         border-radius: 100px;
-        width: 90%;
+        width: 95%;
         margin-right: -3.25rem;
         transition: all 250ms;
 
@@ -29,7 +29,7 @@
 
         &::-webkit-input-placeholder {
             font-weight: 100;
-            color: color(grey, lightest);
+            color: color(grey, dark);
         }
     }
 
@@ -54,7 +54,7 @@
     &__icon {
         height: 2rem;
         width: 2rem;
-        fill: color(grey, light);
+        fill: color(grey, black);
     }
 }
 
