@@ -1,12 +1,19 @@
 .overview {
     display: flex;
+    align-items: center;
+    border-bottom: 1px solid color(grey, light);
 
     &__heading {
-
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
     }
 
     &__stars {
         margin-right: auto;
+        display: flex;
     }
 
     &__icon {
@@ -15,19 +22,68 @@
         fill: color(primary, base);
 
         &-location {
-
+            margin-right: .5rem;
         }
     }
 
-    &__rating {
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
 
+    &__rating {
+        background: color(primary, base);
+        color: color(grey, white);
+        margin-left: 3rem;
+        padding: 0 2rem;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     &__rating-average {
-
+        font-size: 2.25rem;
+        font-weight: 300;
     }
 
     &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+}
 
+.btn-inline {
+    border: none;
+    color: color(primary, base);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    transition: all 250ms;
+
+    &:hover {
+        color: color(grey, dark);
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulse 1s infinite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
