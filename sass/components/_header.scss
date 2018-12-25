@@ -31,6 +31,10 @@
             font-weight: 100;
             color: color(grey, dark);
         }
+
+        &:focus::-webkit-input-placeholder {
+            color: color(grey, darkest);
+        }
     }
 
     &__input:focus + &__button {

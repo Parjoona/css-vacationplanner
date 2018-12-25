@@ -59,6 +59,7 @@ body {
 .description {
   font-size: 1.4rem;
   flex: 0 0 60%;
+  padding: 2.5rem;
   margin-right: 4.5rem;
   background: #FFF;
   box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.05); }
@@ -93,6 +94,8 @@ body {
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
       color: #777; }
+    .search__input:focus::-webkit-input-placeholder {
+      color: #333; }
   .search__input:focus + .search__button {
     background: #ccc; }
   .search__button {
@@ -259,3 +262,47 @@ body {
     transform: scale(1.05); }
   100% {
     transform: scale(1); } }
+
+.description__paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.description__list {
+  margin: 3rem 0;
+  list-style: none;
+  padding: 3rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap; }
+  .description__list-item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+    .description__list-item::before {
+      content: '';
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: 1rem;
+      background: #eb2f64;
+      -webkit-mask-image: url(../img/SVG/chevron-right.svg);
+      -webkit-mask-size: cover; }
+      @supports (-webkit-mask-clip: url(../img/SVG/chevron-right.svg)) {
+        .description__list-item::before {
+          background-image: url(../img/SVG/chevron-right.svg);
+          background-size: cover; } }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #333;
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #FFF; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
