@@ -11,7 +11,7 @@
     height: 7rem;
     font-size: 1.4rem;
     background-color: color(grey, white);
-    border-bottom: 1px solid color(grey, light);
+    @include borderbottom;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,5 +31,24 @@
 
 .hotel-view {
     background-color: color(grey, white);
+    flex: 1;
+}
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background: color(grey, lightest);
+    @include borderbottom;
+}
+
+.description {
+    font-size: 1.4rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    background: color(grey, white);
+    @include boxshadowlight;
+}
+
+.user-reviews {
     flex: 1;
 }

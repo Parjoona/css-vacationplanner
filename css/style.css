@@ -50,6 +50,22 @@ body {
   background-color: #FFF;
   flex: 1; }
 
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background: #EEE;
+  border-bottom: 1px solid #ccc; }
+
+.description {
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background: #FFF;
+  box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.05); }
+
+.user-reviews {
+  flex: 1; }
+
 .logo {
   height: 3.25rem;
   margin: 2rem; }
@@ -146,7 +162,7 @@ body {
       width: 3px;
       background: #eb2f64;
       transform: scaleY(0);
-      transition: transform 200ms, width 400ms cubic-bezier(1, 0, 0, 1) 200ms background 100ms; }
+      transition: transform 200ms,  width 400ms 200ms, background 100ms; }
     .side-nav__item:active::before {
       background: #FF3366; }
     .side-nav__item:hover::before, .side-nav__item--active::before {

@@ -20,7 +20,7 @@
             background: color(primary, base);
             transform: scaleY(0);
             transition: transform 200ms, 
-                        width 400ms cubic-bezier(1,0,0,1) 200ms
+                        width 400ms 200ms,
                         background 100ms;
         }
 

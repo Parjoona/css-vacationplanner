@@ -1,3 +1,11 @@
 @mixin boxshadow {
     box-shadow: 0 2rem 4rem rgba(color(grey, black), .3);
 }
+
+@mixin boxshadowlight {
+    box-shadow: 0 2rem 4.5rem rgba(color(grey, black), 0.05);
+}
+
+@mixin borderbottom {
+    border-bottom: 1px solid color(grey, light);
+}
