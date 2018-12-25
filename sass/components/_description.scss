@@ -67,3 +67,43 @@
         }
     }
 }
+
+.user-reviews {
+
+}
+
+.review {
+    background: color(grey, white);
+    @include boxshadowlight;
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+
+    &__text {
+
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    &__user {
+        display: flex;
+
+        &-box {
+        }
+
+        &-name {
+
+        }
+
+        &-date {
+
+        }
+    }
+
+    &__rating {
+
+    }
+}

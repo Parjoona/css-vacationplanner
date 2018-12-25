@@ -51,13 +51,13 @@ body {
   flex: 1; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background: #EEE;
   border-bottom: 1px solid #ccc; }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   padding: 2.5rem;
   margin-right: 4.5rem;
@@ -306,3 +306,15 @@ body {
     border: 3px solid #FFF; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+
+.review {
+  background: #FFF;
+  box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+  .review__user {
+    display: flex; }
