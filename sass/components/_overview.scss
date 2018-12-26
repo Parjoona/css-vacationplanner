@@ -66,8 +66,17 @@
     cursor: pointer;
     transition: all 250ms;
 
+    & span {
+        margin-left: 3px;
+        transition: margin-left 250ms;
+    }
+
     &:hover {
         color: color(grey, dark);
+
+        span {
+            margin-left: 8px;
+        }
     }
 
     &:focus {
