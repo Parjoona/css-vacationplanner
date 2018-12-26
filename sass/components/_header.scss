@@ -9,6 +9,12 @@
     align-items: center;
     justify-content: center;
 
+    @include query-for(mobile) {
+        order: 1;
+        flex: 0 0 100%;
+        background: color(grey, lighter);
+    }
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -20,6 +26,11 @@
         width: 95%;
         margin-right: -3.25rem;
         transition: all 250ms;
+
+        @include query-for(mobile) {
+            border-radius: 0;
+            margin-right: 0;
+        }
 
         &:focus {
             outline: none;
@@ -39,6 +50,10 @@
 
     &__input:focus + &__button {
         background: color(grey, light);
+
+        @include query-for(mobile) {
+            background: color(grey, light);
+        }
     }
 
     &__button {

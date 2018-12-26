@@ -20,6 +20,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include query-for(mobile) {
+        flex-wrap: wrap;
+        height: 11.5rem;
+        align-content: space-around;
+    }
 }
 
 .content {
@@ -52,6 +58,10 @@
     @include query-for(tablet) {
         padding: 3rem;
     }
+
+    @include query-for(mobile) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -64,6 +74,11 @@
     @include query-for(tablet) {
         padding: 2rem;
         margin-right: 3rem;
+    }
+
+    @include query-for(mobile) {
+        margin-right: 0;
+        margin-bottom: 3rem;
     }
 }
 
