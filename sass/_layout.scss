@@ -5,6 +5,11 @@
     @include boxshadow;
 
     min-height: 20rem;
+
+    @include query-for(landscape) {
+        margin: 0;
+        max-width: 100%;
+    }
 }
 
 .header {
@@ -19,6 +24,9 @@
 
 .content {
     display: flex;
+    @include query-for(tablet) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -40,6 +48,10 @@
     padding: 4.5rem;
     background: color(grey, lightest);
     @include borderbottom;
+
+    @include query-for(tablet) {
+        padding: 3rem;
+    }
 }
 
 .description {
@@ -48,6 +60,11 @@
     margin-right: 4.5rem;
     background: color(grey, white);
     @include boxshadowlight;
+
+    @include query-for(tablet) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 }
 
 .user-reviews {

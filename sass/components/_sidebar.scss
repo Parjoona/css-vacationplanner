@@ -3,11 +3,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include query-for(tablet) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
+        @include query-for(tablet) {
+            flex: 1;
+        }
+
         &:not(:last-child) {
             margin-bottom: 1rem;
+
+            @include query-for(tablet) {
+                margin-bottom: 0;
+            }
         }
 
         &::before {
@@ -47,6 +60,11 @@
         align-items: center;
         z-index: 10;
         position: relative;
+
+        @include query-for(tablet) {
+            justify-content: center;
+            padding: 2rem;
+        }
     }
 
     &__icon {
@@ -62,4 +80,8 @@
     text-align: center;
     padding: 2.5rem;
     color: color(grey, lighter);
+
+    @include query-for(tablet) {
+        display: none;
+    }
 }
